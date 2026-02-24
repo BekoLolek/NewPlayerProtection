@@ -1,0 +1,41 @@
+# NewPlayerProtection Configuration
+# Plugin: NewPlayerProtection.v1 - BL  |  Author: Lolek
+
+# Duration of new player protection in hours.
+# Default: 72 (3 days)
+protection-duration-hours: 72
+
+# Messages — use & for color codes.
+messages:
+  # Sent to a new player when they first join and receive protection.
+  protection-granted: "&aYou have been granted new player protection for &e%hours% hours&a! You cannot be attacked by other players during this time."
+  # Sent to a returning player who still has active protection.
+  protection-active: "&aYou have &e%time% &aof new player protection remaining."
+  # Sent to a player who checks their own status and is protected.
+  self-protected: "&aYou are protected for &e%time%&a."
+  # Sent to a player who checks their own status and is not protected.
+  self-not-protected: "&7You are not currently protected."
+  # Sent to an attacker who tries to hit a protected player.
+  cannot-hit-protected: "&cThat player is under new player protection."
+  # Sent to a protected attacker who tries to hit someone.
+  you-are-protected: "&cYou cannot attack other players while under new player protection."
+  # Sent when an admin adds protection to a player.
+  player-added: "&aProtection granted to &e%player%&a."
+  # Sent when an admin removes protection from a player.
+  player-removed: "&aProtection removed from &e%player%&a."
+  # Sent when checking a protected player.
+  check-protected: "&e%player% &ais protected for &e%time%&a."
+  # Sent when checking an unprotected player.
+  check-not-protected: "&e%player% &7is not currently protected."
+  # Sent when a player who was already protected is added again.
+  player-already-protected: "&cThat player is already protected."
+  # Sent when trying to remove protection from an unprotected player.
+  player-not-protected: "&cThat player is not currently protected."
+  # Sent when looking up a player who has never joined.
+  player-not-found: "&cPlayer not found."
+  # Sent when the config is reloaded.
+  config-reloaded: "&aNewPlayerProtection config reloaded."
+  # Sent when a protected player's protection expires (notified if online).
+  protection-expired: "&eYour new player protection has expired. Stay safe!"
+  # Sent when the sender does not have permission.
+  no-permission: "&cYou do not have permission to use this command."

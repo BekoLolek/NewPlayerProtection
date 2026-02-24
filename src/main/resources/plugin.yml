@@ -1,0 +1,29 @@
+name: NewPlayerProtection
+version: '1'
+main: dev.bekololek.newplayerprotection.Main
+api-version: "1.19"
+description: Temporary PvP protection for new players
+authors: [Lolek]
+
+depend: [VersionAdapter]
+softdepend: [Vault, PlaceholderAPI]
+
+commands:
+  newplayerprotection:
+    description: NewPlayerProtection main command
+    usage: /newplayerprotection <me|reload|add|remove|check|stats>
+    aliases: [npp, protection]
+
+permissions:
+  newplayerprotection.admin:
+    description: Reload config, add/remove/check protection
+    default: op
+  newplayerprotection.bypass:
+    description: Attack protected players and attack while protected
+    default: op
+  newplayerprotection.stats:
+    description: View own protection statistics
+    default: true
+  newplayerprotection.stats.others:
+    description: View other players' protection statistics
+    default: op

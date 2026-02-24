@@ -1,0 +1,7 @@
+plugin: "NewPlayerProtection.v1 - BL"
+author: Lolek
+configs:
+  - path: config.yml
+    label: "Main Config"
+  - path: stats.yml
+    label: "Player Statistics"
