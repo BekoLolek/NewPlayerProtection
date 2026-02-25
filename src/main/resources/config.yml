@@ -1,9 +1,11 @@
 # NewPlayerProtection Configuration
 # Plugin: NewPlayerProtection.v1 - BL  |  Author: Lolek
 
-# Duration of new player protection in hours.
-# Default: 72 (3 days)
+# Duration of new player protection.
+# The total duration is hours + minutes combined.
+# Default: 72 hours, 0 minutes (3 days)
 protection-duration-hours: 72
+protection-duration-minutes: 0
 
 # Messages — use & for color codes.
 messages:

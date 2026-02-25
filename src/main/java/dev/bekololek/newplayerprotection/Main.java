@@ -89,6 +89,7 @@ public class Main extends JavaPlugin {
      */
     public long getProtectionDurationMillis() {
         long hours = getConfig().getLong("protection-duration-hours", 72);
-        return hours * 60 * 60 * 1000;
+        long minutes = getConfig().getLong("protection-duration-minutes", 0);
+        return (hours * 60 * 60 * 1000) + (minutes * 60 * 1000);
     }
 }
